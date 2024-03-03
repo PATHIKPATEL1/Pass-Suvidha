@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ic_update_profile"
+        android:title="Update Profile"
+        android:icon="@drawable/ic_update_details"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/ic_change_password"
+        android:title="Change Password"
+        android:icon="@drawable/ic_change_password"
+        app:showAsAction="always"/>
+</menu>

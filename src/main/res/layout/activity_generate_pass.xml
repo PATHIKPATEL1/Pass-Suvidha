@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".GeneratePassActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/generate_pass_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/color_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_generate_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_generate_pass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="81dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="0dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@android:color/background_light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbl_pass_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="22dp"
+                        android:text="Three Month Passenger Concession Pass"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/temp_view"
+                        android:layout_width="1dp"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/lbl_pass_title"
+                        android:layout_toRightOf="@+id/lbl_pass_title"/>
+
+                    <ImageView
+                        android:id="@+id/ic_pass_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/lbl_pass_title"
+                        android:layout_toLeftOf="@+id/temp_view"
+                        android:src="@drawable/ic_profile_logo"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/ic_pass_image"
+                        android:layout_below="@+id/lbl_pass_title">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Name : "/>
+                        <TextView
+                            android:id="@+id/lbl_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_date_of_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/ic_pass_image"
+                        android:layout_below="@+id/ll_name">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Date Of Birth : "/>
+                        <TextView
+                            android:id="@+id/lbl_date_of_birth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/ic_pass_image"
+                        android:layout_below="@+id/ll_date_of_birth">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Gender : "/>
+                        <TextView
+                            android:id="@+id/lbl_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/ic_pass_image"
+                        android:layout_below="@+id/ll_gender">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Mobile no : "/>
+                        <TextView
+                            android:id="@+id/lbl_mobile_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_mobile_no">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Email ID : "/>
+                        <TextView
+                            android:id="@+id/lbl_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_email">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Address : "/>
+                        <TextView
+                            android:id="@+id/lbl_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_institute_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_address">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Institute Name : "/>
+                        <TextView
+                            android:id="@+id/lbl_institute_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pass_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_institute_name">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Pass Type : "/>
+                        <TextView
+                            android:id="@+id/lbl_pass_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pass_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/temp_view"
+                        android:layout_below="@+id/ll_institute_name">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Pass no : "/>
+                        <TextView
+                            android:id="@+id/lbl_pass_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_pass_type">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Start Date : "/>
+                        <TextView
+                            android:id="@+id/lbl_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/temp_view"
+                        android:layout_below="@+id/ll_pass_type">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="End Date : "/>
+                        <TextView
+                            android:id="@+id/lbl_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_from_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_start_date">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="From Place : "/>
+                        <TextView
+                            android:id="@+id/lbl_from_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_to_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/temp_view"
+                        android:layout_below="@+id/ll_start_date">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="To Place : "/>
+                        <TextView
+                            android:id="@+id/lbl_to_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pass_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ll_from_place">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Pass Amount : "/>
+                        <TextView
+                            android:id="@+id/lbl_pass_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_generate_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="0dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@android:color/background_light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_bus_pass_qr_code"
+                    android:layout_margin="20dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@+id/ic_qr_bus_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_pass_suvidha"
+                    android:layout_below="@id/ic_bus_pass_qr_code"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pass Suvidha"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/ic_qr_bus_logo"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

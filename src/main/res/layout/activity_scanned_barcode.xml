@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ScannedBarcodeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/qr_code_scan_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/color_toolbar"/>
+
+    <SurfaceView
+        android:id="@+id/qr_code_scan_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/qr_code_scan_toolbar" />
+
+    <TextView
+        android:id="@+id/txtBarcodeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qr_code_scan_toolbar"
+        android:text="No Barcode Detected"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ViewProfileActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_view_profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/color_toolbar"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="25dp"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_view_profile_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_view_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ic_view_profile_profile_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_profile_logo" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_profile_image_view_profile"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listview_view_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+                </ListView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

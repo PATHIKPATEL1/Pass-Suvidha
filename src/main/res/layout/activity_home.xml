@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/color_toolbar"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_81dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="81dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".66" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".38" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".48" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".52" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_ver_guideline_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_ver_guideline_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_ver_guideline_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".62" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/home_hor_guideline_64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".64" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_pass_suvidha"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_66" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_35"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_81dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ic_home_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile_logo" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_profile_image_home"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_48"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_38">
+
+
+        <ImageView
+            android:id="@+id/ic_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="15dp"
+            android:src="@drawable/ic_view_profile" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_48"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_38">
+
+
+        <ImageView
+            android:id="@+id/ic_apply_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:src="@drawable/ic_apply_pass" />
+
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lbl_view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Profile"
+            app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_50"
+            app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_50"
+            app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+            app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_48"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:paddingEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/lbl_apply_for_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply For Pass"
+            app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_50"
+            app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+            app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_50"
+            app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_48"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="15dp"
+            android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_66"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_50">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="6dp"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_66"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_50">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_view_pass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_62"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_52">
+
+        <ImageView
+            android:id="@+id/ic_view_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="15dp"
+            android:src="@drawable/ic_view_pass" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_track_bus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_62"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_52">
+
+
+        <ImageView
+            android:id="@+id/ic_track_bus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:src="@drawable/ic_track_bus" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lbl_view_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Pass"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_20"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_62"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_64"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="15dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/lbl_track_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Bus"
+        app:layout_constraintEnd_toStartOf="@+id/home_ver_guideline_80"
+        app:layout_constraintStart_toStartOf="@+id/home_ver_guideline_50"
+        app:layout_constraintTop_toTopOf="@+id/home_hor_guideline_62"
+        app:layout_constraintBottom_toTopOf="@+id/home_hor_guideline_64"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="15dp"
+        android:textSize="12sp" />
+
+</android.support.constraint.ConstraintLayout>

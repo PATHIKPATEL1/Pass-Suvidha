@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       tools:context=".AuthenticationActivity">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/verify_ic_pass_suvidha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_pass_suvidha"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/verify_ic_pass_suvidha">
+
+        <TextView
+            android:id="@+id/lbl_verify_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Verify your Email address"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/lbl_verify_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Pass Suvidha will send an email to verify your email address. You can SignIn After the verification of email address"
+            android:textSize="20dp" />
+
+
+
+        <Button
+
+            android:id="@+id/btn_verify_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_rounded"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:enabled="false"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

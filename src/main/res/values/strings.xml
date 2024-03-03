@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pass Suvidha</string>
+    <string name="img_app_logo_animation">Application Logo</string>
+    <string name="anim_app_name">Pass Suvidha</string>
+    <string name="ic_user_signin">User signIn</string>
+    <string name="btn_signin">SIGN IN</string>
+    <string name="btn_signup">SIGN UP</string>
+    <string name="txt_or">OR</string>
+    <string name="tb_username_signin">Username</string>
+    <string name="tb_password_signin">Password</string>
+    <string name="img_app_background">Bus Image</string>
+    <string name="title_activity_track_bus">Map</string>
+
+    <string-array name="pass_validity">
+        <item>--Select Validity--</item>
+        <item>1 Month</item>
+        <item>3 Month</item>
+    </string-array>
+
+    <string-array name="pass_type">
+        <item>--Select Pass Type--</item>
+        <item>Local</item>
+        <item>Express</item>
+    </string-array>
+</resources>
