@@ -32,6 +32,19 @@ In Gujarat, students are entitled to a 50% discount on bus passes, but verifying
 - **Security**: The app's use of QR code technology enhances security, reducing the risk of fraudulent passes and unauthorized access.
 - **Real-Time Tracking**: Passengers can track their buses in real-time, reducing waiting times and improving overall travel experience.
 
+## Technology Stack
+
+- **Front End**: Android SDK for the mobile application.
+- **Back End**: PHP and Firebase for server-side processing, real-time database, and authentication.
+- **Documentation Tool**: Microsoft Word for project documentation.
+
 ## Conclusion
 
 Pass Suvidha is more than just an app; it's a solution to the challenges faced by students and employees in accessing subsidized bus passes. By providing a user-friendly interface, efficient pass generation, real-time tracking, and enhanced security features, Pass Suvidha revolutionizes bus pass management, making it easier, faster, and more secure for everyone involved.
+
+
+![image](https://github.com/PATHIKPATEL1/Pass-Suvidha/assets/161973323/7a9ee4dd-162b-4bf6-813c-8632f7dcbbd2)
+
+
+
+![image](https://github.com/PATHIKPATEL1/Pass-Suvidha/assets/161973323/6c1ffdda-f435-4b0f-95ad-5d9d298c58cc)
