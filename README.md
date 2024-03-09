@@ -6,7 +6,7 @@ Pass Suvidha is a revolutionary application designed to streamline the process o
 
 ## The Need
 
-In Gujarat, students are entitled to a 50% discount on bus passes, but verifying their enrollment in specific schools or colleges can be arduous. Traditional methods of pass issuance involve manual paperwork, long queues, and significant time investment. Pass Suvidha was conceived to alleviate these challenges by providing a digital platform that facilitates easy access to bus passes while reducing administrative burden.
+In Gujarat, students are entitled to get a some amount of discount on bus passes, but verifying their enrollment in specific schools or colleges can be arduous. Traditional methods of pass issuance involve manual paperwork, long queues, and significant time investment. Pass Suvidha was conceived to alleviate these challenges by providing a digital platform that facilitates easy access to bus passes while reducing administrative burden.
 
 ## Key Features
 
